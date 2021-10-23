@@ -1,0 +1,98 @@
+html {
+  scroll-behavior: smooth;
+}
+inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+.navigation{
+  display: flex;
+  background-color: #B9AE9F;
+}
+.logo{
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+
+}
+nav{
+    width: 73%;
+    padding: 1%;
+
+}
+a{
+    width: 25%;
+    margin-left: auto;
+    padding: 2%;
+}
+.heroImg{
+    height: 600px;
+    padding: 25px;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  #mySkills-container {
+    /* border: orange dashed 1.5px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
+    
+  }
+  #mySkills-container > h1 {
+    /* border: green dashed 1.5px; */
+    width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  .skill-item {
+    /* border: blue dashed 1.5px; */
+    position: relative;
+    width: 31%;
+    max-width: 600px;
+    min-height: 300px;
+    margin: 0% 1%;
+    padding: 2% 3%;
+  }
+  
+  .skill-item > img { 
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.footer{
+    background-color: #B9AE9F;
+    padding: center;
+}
+.footer-ul{
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-li{
+    padding: center;
+}
+  /* responsive css properties done with media queries below */
+ @media only screen and (max-width: 600px) {
+    .skill-item {
+      flex-direction: column;
+      width: 75%;
+      padding-top: 18px;
+      grid-template-rows: 400px 400px 400px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "Mockup1 Mockup2 Mockup3";
+    }
+}
